@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHubFavorites</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>GitHub Favorites</h1>
+        <div class="search">
+          <label for="gitHubId">Usuário do GitHub</label>
+          <input type="text" id="gitHubId" placeholder="Usuário do GitHub" />
+          <button>&plus;</button>
+        </div>
+      </header>
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositórios</th>
+              <th>Seguidores</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="user">
+                <img
+                  src="https://www.github.com/piluvitu.png"
+                  alt="Github Paulo profile picture"
+                />
+                <a class="id" href="https://www.github.com/piluvitu">
+                  <p>Paulo Victor</p>
+                  <span>piluvitu</span>
+                </a>
+              </td>
+              <td class="repositories">20</td>
+              <td class="followers">15</td>
+              <td><button>&times;</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
