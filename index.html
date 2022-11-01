@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHubFavorites</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <header>
         <h1>GitHub Favorites</h1>
         <div class="search">
-          <label for="gitHubId">Usuário do GitHub</label>
+          <label class="sr-only" for="gitHubId">Usuário do GitHub</label>
           <input type="text" id="gitHubId" placeholder="Usuário do GitHub" />
           <button>&plus;</button>
         </div>
@@ -40,7 +47,22 @@
               </td>
               <td class="repositories">20</td>
               <td class="followers">15</td>
-              <td><button>&times;</button></td>
+              <td><button class="remove">&times;</button></td>
+            </tr>
+            <tr>
+              <td class="user">
+                <img
+                  src="https://www.github.com/diego3g.png"
+                  alt="Github Diego profile picture"
+                />
+                <a class="id" href="https://www.github.com/diego3g">
+                  <p>Diego Fernandes</p>
+                  <span>diego3g</span>
+                </a>
+              </td>
+              <td class="repositories">300</td>
+              <td class="followers">70000</td>
+              <td><button class="remove">&times;</button></td>
             </tr>
           </tbody>
         </table>
