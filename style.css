@@ -154,13 +154,14 @@ td .remove {
   background: none;
   border: none;
   color: red;
+  cursor: pointer;
 }
 
 @media (max-width: 463px) {
   :root {
     font-size: 50%;
   }
-  .container{
+  .container {
     max-width: fit-content;
   }
   .container header {
